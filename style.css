@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+span {
+  color: purple;
+}
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+.logo-img {
+  height: 40px;
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: purple;
+}
+.hero {
+  background: linear-gradient(to right, #5a88f3, #8ec5fc);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.section {
+  padding: 2rem;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 1rem;
+}
+.detail-page {
+  padding: 2rem;
+}
+.detail-page img {
+  width: 100%;
+  margin: 1rem 0;
+}
+footer {
+  color: purple;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+.video-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s ease-out;
+}
+.video-subtitle {
+  font-size: 1.2rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kontak-artikel {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+.kontak-artikel h3 {
+  margin-bottom: 0.5rem;
+}
+.wa-btn {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.wa-btn:hover {
+  background: #20ba5a;
+}
+.sosmed-links a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #555;
+}
+.sosmed-links a:hover {
+  text-decoration: underline;
+}
+.tracklist {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
